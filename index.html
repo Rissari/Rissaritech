@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Meu Portfólio</title>
+    <title>RissariTech - Portfólio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -61,6 +61,14 @@
             0%, 50% { border-color: #5D5CDE; }
             51%, 100% { border-color: transparent; }
         }
+
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+
+        .tech-icon:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body class="bg-white dark:bg-dark text-gray-900 dark:text-white font-sans">
@@ -69,7 +77,7 @@
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <h1 class="text-xl font-bold gradient-bg bg-clip-text text-transparent">
-                    Meu Portfolio
+                    RissariTech
                 </h1>
                 <div class="hidden md:flex space-x-6">
                     <a href="#home" class="hover:text-primary transition-colors">Início</a>
@@ -105,7 +113,7 @@
                 </div>
             </div>
             <h1 class="text-4xl md:text-6xl font-bold mb-4">
-                TechRissari, eu sou <span id="typing-text" class="typing-animation">Desenvolvedor</span>
+                Olá, eu sou <span id="typing-text" class="typing-animation">Desenvolvedor</span>
             </h1>
             <p class="text-xl md:text-2xl mb-8 text-white/90">
                 Criando experiências digitais incríveis
@@ -152,11 +160,11 @@
                         </div>
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
                             <h4 class="font-semibold mb-2">Localização</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Brasil</p>
+                            <p class="text-gray-600 dark:text-gray-300">Espírito Santo, Brasil</p>
                         </div>
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                            <h4 class="font-semibold mb-2">Interesses</h4>
-                            <p class="text-gray-600 dark:text-gray-300">IA, Desenvolvimento Web (PHP, Python, JavaScript/CSS/HTML), Banco de Dados (MySQL, SQL Server, MongoDB), Desenvolvimento Mobile (Android/iOS), APIs e Integrações, Automação de Processos, Soluções em Cloud Computing.</p>
+                            <h4 class="font-semibold mb-2">Especialidades</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Desenvolvimento Web, Mobile, IA, Cloud Computing, Automação de Processos</p>
                         </div>
                     </div>
                 </div>
@@ -164,171 +172,120 @@
         </div>
     </section>
 
-<!-- Skills Section -->
-<section id="skills" class="py-20">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Habilidades</h2>
-    <div class="max-w-4xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-8">
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Habilidades</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Linguagens & Frameworks -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Linguagens & Frameworks</h3>
+                        <div class="space-y-4">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fab fa-python text-blue-500 text-xl tech-icon"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <span>95%</span>
+                                </div>
+                                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="skill-bar bg-primary h-2 rounded-full" data-width="95%"></div>
+                                </div>
+                            </div>
 
-        <!-- Linguagens & Frameworks -->
-        <div>
-          <h3 class="text-xl font-semibold mb-6">Linguagens & Frameworks</h3>
-          <div class="space-y-6">
-            <div class="skill-item">
-              <div class="flex justify-between mb-2">
-                <div class="flex items-center gap-2">
-                  <i class="fab fa-python text-primary text-2xl"></i>
-                  <span>Python</span>
-                </div>
-                <span>95%</span>
-              </div>
-              <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                <div class="skill-bar bg-primary h-2 rounded-full" data-width="95%"></div>
-              </div>
-            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fab fa-js text-yellow-400 text-xl tech-icon"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
+                                </div>
+                            </div>
 
-            <div class="skill-item">
-              <div class="flex justify-between mb-2">
-                <div class="flex items-center gap-2">
-                  <i class="fab fa-js text-yellow-400 text-2xl"></i>
-                  <span>JavaScript</span>
-                </div>
-                <span>90%</span>
-              </div>
-              <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
-              </div>
-            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fab fa-php text-indigo-600 text-xl tech-icon"></i>
+                                        <span>PHP</span>
+                                    </div>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
+                                </div>
+                            </div>
 
-            <div class="skill-item">
-              <div class="flex justify-between mb-2">
-                <div class="flex items-center gap-2">
-                  <i class="fab fa-php text-indigo-600 text-2xl"></i>
-                  <span>PHP</span>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fab fa-html5 text-orange-500 text-xl tech-icon"></i>
+                                        <span>HTML/CSS</span>
+                                    </div>
+                                    <span>95%</span>
+                                </div>
+                                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="skill-bar bg-primary h-2 rounded-full" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tecnologias & Ferramentas -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Tecnologias & Ferramentas</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fas fa-database text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">MySQL</div>
+                                <div class="text-xs text-gray-500">90%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fas fa-database text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">SQL Server</div>
+                                <div class="text-xs text-gray-500">85%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fas fa-database text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">MongoDB</div>
+                                <div class="text-xs text-gray-500">80%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fab fa-git-alt text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">Git</div>
+                                <div class="text-xs text-gray-500">90%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fab fa-docker text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">Docker</div>
+                                <div class="text-xs text-gray-500">85%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fab fa-aws text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">AWS</div>
+                                <div class="text-xs text-gray-500">80%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fab fa-figma text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">Figma</div>
+                                <div class="text-xs text-gray-500">75%</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg card-hover">
+                                <i class="fas fa-mobile-alt text-3xl text-primary mb-2 tech-icon"></i>
+                                <div class="text-sm font-medium">Mobile Dev</div>
+                                <div class="text-xs text-gray-500">90%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <span>90%</span>
-              </div>
-              <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
-              </div>
             </div>
-          </div>
         </div>
-
-        <!-- Banco de Dados & Tecnologias -->
-        <div>
-          <h3 class="text-xl font-semibold mb-6">Banco de Dados & Tecnologias</h3>
-          <div class="space-y-6">
-            
-            <div class="skill-item flex items-center gap-3">
-              <i class="fas fa-database text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>MySQL</span>
-                  <span>90%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fas fa-database text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>SQL Server</span>
-                  <span>85%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="85%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fas fa-database text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>MongoDB</span>
-                  <span>80%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="80%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fab fa-git-alt text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>Git</span>
-                  <span>90%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fab fa-docker text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>Docker</span>
-                  <span>85%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="85%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fab fa-aws text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>AWS</span>
-                  <span>80%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="80%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fab fa-figma text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>Figma</span>
-                  <span>75%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="75%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item flex items-center gap-3">
-              <i class="fas fa-mobile-alt text-primary text-3xl"></i>
-              <div class="flex-1">
-                <div class="flex justify-between mb-1">
-                  <span>Mobile (Android/iOS)</span>
-                  <span>90%</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div class="skill-bar bg-primary h-2 rounded-full" data-width="90%"></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
@@ -351,7 +308,7 @@
                             <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">MongoDB</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/felipe-rissari-3961a7117/" class="text-primary hover:underline">
+                            <a href="https://github.com/Rissari" class="text-primary hover:underline">
                                 <i class="fab fa-github mr-1"></i>Código
                             </a>
                             <a href="#" class="text-primary hover:underline">
@@ -372,12 +329,12 @@
                             Dashboard interativo para análise de dados com gráficos em tempo real.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Vue.js</span>
-                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">D3.js</span>
                             <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Python</span>
+                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">D3.js</span>
+                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">MySQL</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-primary hover:underline">
+                            <a href="https://github.com/Rissari" class="text-primary hover:underline">
                                 <i class="fab fa-github mr-1"></i>Código
                             </a>
                             <a href="#" class="text-primary hover:underline">
@@ -403,7 +360,7 @@
                             <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Redux</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-primary hover:underline">
+                            <a href="https://github.com/Rissari" class="text-primary hover:underline">
                                 <i class="fab fa-github mr-1"></i>Código
                             </a>
                             <a href="#" class="text-primary hover:underline">
@@ -439,14 +396,14 @@
                             </div>
                             <div class="flex items-center space-x-4">
                                 <i class="fas fa-map-marker-alt text-primary text-xl"></i>
-                                <span>Espirito Santo, Brasil</span>
+                                <span>Espírito Santo, Brasil</span>
                             </div>
                         </div>
                         <div class="flex space-x-4 mt-8">
-                            <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
+                            <a href="https://github.com/Rissari" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
+                            <a href="https://www.linkedin.com/in/felipe-rissari-3961a7117/" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
@@ -521,7 +478,7 @@
         });
 
         // Typing animation
-        const texts = ['Desenvolvedor', 'Designer', 'Criativo'];
+        const texts = ['Desenvolvedor', 'TechRissari', 'Criativo'];
         let textIndex = 0;
         let charIndex = 0;
         const typingElement = document.getElementById('typing-text');
